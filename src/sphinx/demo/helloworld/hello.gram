@@ -6,4 +6,4 @@
 
 grammar hello;
 
-public <greet> = (Good morning | Hello) ( Bhiksha | Evandro | Paul | Philip | Rita | Will | Jerry);
+public <greet> = (Good morning | Hello) ( Bhiksha | Evandro | Paul | Philip | Rita | Will | Jerry | Vasily);

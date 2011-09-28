@@ -20,8 +20,6 @@ public class HelloWorld2 {
             return;
         }
 
-        System.out.println("Say: (Good morning | Hello) ( Bhiksha | Evandro | Paul | Philip | Rita | Will )");
-
         while (true) {
             System.out.println("Start speaking...");
             Result result = recognizer.recognize();

@@ -74,7 +74,7 @@
 
     <component name="flatLinguist" type="edu.cmu.sphinx.linguist.flat.FlatLinguist">
         <property name="logMath" value="logMath"/>
-        <property name="grammar" value="jsgfGrammar"/>
+        <property name="grammar" value="wordListGrammar"/>
         <property name="acousticModel" value="wsj"/>
         <property name="wordInsertionProbability" value="${wordInsertionProbability}"/>
         <property name="languageWeight" value="${languageWeight}"/>
@@ -86,12 +86,14 @@
     <!-- The Grammar  configuration                               -->
     <!-- ******************************************************** -->
 
-    <component name="jsgfGrammar" type="edu.cmu.sphinx.linguist.language.grammar.SimpleWordListGrammar">
-        <property name="dictionary" value="dictionary"/>
-        <property name="grammarLocation" value="resource:/sphinx/demo/helloworld2/"/>
-        <property name="logMath" value="logMath"/>
+    <component name="wordListGrammar" type="edu.cmu.sphinx.linguist.language.grammar.SimpleWordListGrammar">
+        <property name="path" value="tidigits.wordlist"/>
         <property name="isLooping" value="true"/>
+        <property name="dictionary" value="dictionary"/>
+        <property name="optimizeGrammar" value="true"/>
+        <property name="logMath" value="logMath"/>
     </component>
+
 
 
     <!-- ******************************************************** -->

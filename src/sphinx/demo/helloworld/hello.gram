@@ -1,9 +1,3 @@
-#JSGF V1.0;
-
-/**
- * JSGF Grammar for Hello World example
- */
-
 grammar hello;
 
-public <command> = up | down | left | right;
+public <command> = (file vault) | contacts | reports | alerts | transactions | firm | settings;
